@@ -1,6 +1,7 @@
-var year = window.location.href.slice(78, 82);
-var month = window.location.href.slice(82, 84) - 1;
-var day = window.location.href.slice(84, 86);
+var q = window.location.href.search('\\?');
+var year = window.location.href.slice(q + 1, q + 5);
+var month = window.location.href.slice(q + 5, q + 7) - 1;
+var day = window.location.href.slice(q + 7, q + 9);
 var now = new Date();
 var then = new Date(year, month, day);
 var mil = now - then;
