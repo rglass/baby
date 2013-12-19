@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Vollkorn-Bold";
+  src: url(./Vollkorn-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Vollkorn-Regular";
+  src: url(./Vollkorn-Regular.ttf) format("truetype");
+}
+
+body { text-align: center }
+#l1 { font-family: 'Vollkorn-Bold', serif; }
+p { font-family: 'Vollkorn-Regular', serif; }
