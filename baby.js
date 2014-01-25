@@ -28,7 +28,7 @@ if (window.location.href.indexOf("?") === -1) {
 
     var inDiv = document.getElementById('in').children[0];
     var outDiv = document.getElementById('out').children[0];
-
+    var outDate = document.getElementById('outDate').children[0];
     if (w === 1) {
 	inDiv.innerHTML = "one week and ";
     } else {
@@ -50,4 +50,5 @@ if (window.location.href.indexOf("?") === -1) {
     } else {
 	outDiv.innerHTML += String(od) + " days.";
     }
+    outDate.innerHTML = moment(then).add('weeks', 40).format("dddd, MMMM Do YYYY");
 }
